@@ -12,6 +12,5 @@ class PoliteReminder(PrefixedReminder):
         super().__init__(prefix="please, do your tasks ")
         self.text = self.prefix + text
 
-
     def __iter__(self):
         return iter([self.text])
